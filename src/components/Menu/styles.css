@@ -1,0 +1,32 @@
+.menu-wrapper {
+  
+}
+
+.menu-wrapper svg {
+  cursor: pointer;
+  position: absolute;
+  right: 98px;
+  top: 98px;
+  z-index: 11;
+  color: var(--color-text);
+}
+
+.menu-wrapper .menu.closed {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-wrapper .menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  color: var(--color-primary);
+}

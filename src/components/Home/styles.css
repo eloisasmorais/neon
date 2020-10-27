@@ -1,0 +1,55 @@
+main {
+	height: 100%;
+	width: 100%;
+	transition: background 0.7s;
+	background: linear-gradient(to right, var(--color-primary) 50%, var(--color-secondary) 50%);
+	background-size: 200% 200%;
+}
+
+main.first-page {
+	background-position:100% 100%;
+	animation: slide-out-full 0.7s ease forwards;
+}
+
+main.second-page {
+	background: linear-gradient(to right, var(--color-primary) 50%, var(--color-secondary) 50%);
+	background-size: 200% 200%;
+	animation: slide-out 0.7s ease forwards;
+}
+
+
+main.third-page {
+	background: linear-gradient(to right, var(--color-primary) 50%, var(--color-secondary) 50%);
+	animation: slide-in-full 0.7s ease forwards;
+	background-size: 200% 200%;
+}
+
+@keyframes slide-out-full {
+	0% {
+		background-position:100% 0%
+	}
+
+	100% {
+		background-position: 0% 0%
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		background-position:0% 0%
+	}
+
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+@keyframes slide-in-full {
+	0% {
+		background-position:50% 0%
+	}
+
+	100% {
+		background-position: 100% 100%
+	}
+}

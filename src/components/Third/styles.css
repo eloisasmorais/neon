@@ -1,0 +1,16 @@
+section.third {
+  padding: 8vw;
+}
+
+section.third header {
+  display: flex;
+  align-items: center;
+}
+
+section.third h4 {
+  color: var(--color-primary);
+  font-weight: normal;
+  text-transform: none;
+  font-size: 2vw;
+  margin-left: 4rem;
+}

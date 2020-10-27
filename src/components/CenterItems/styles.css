@@ -1,0 +1,54 @@
+.center-items {
+  display: grid;
+  place-items: center;
+}
+
+:not(.first) .center-items h1 {
+  color: var(--color-primary);
+}
+
+.center-items h1 {
+  font-size: 10vw;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color: var(--color-text);
+}
+
+.center-items h1:first-of-type {
+  font-size: 12vw;
+  color: transparent;
+  margin: 0;
+}
+
+.center-items h1:last-child {
+  top: 2vw;
+}
+
+section.third .center-items h1 {
+  font-size: 3.5vw;
+}
+
+section.third .center-items h1:first-of-type {
+  font-size: 4vw;
+  color: transparent;
+}
+
+section.third .center-items h1:last-child {
+  top: 1vw;
+}
+
+.outline {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-accent);
+  white-space: nowrap;
+  color: transparent;
+  z-index: 10;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .outline {
+    -webkit-text-stroke-width: 2px;
+  }
+}

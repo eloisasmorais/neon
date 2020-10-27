@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #BB0061;
+    --color-secondary: #100E0E;
+    --color-accent: #1D4A77;
+    --color-text: #D5E3F1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+	font-family: 'Chivo', sans-serif;
+	background-color: var(--color-primary);
+	transition: background 0.4s;
+}
+
+h1, 
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+	text-transform: uppercase;
+	line-height: 0;
+}
+
+section {
+	height: 100%;
+  width: 100%;
+}
+
